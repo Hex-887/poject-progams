@@ -29,5 +29,16 @@ elif q == 4:
     for i in range(10, 0, -1):
         print(i) # выведет 10, 9, ..., 1
 
+elif q == 5:
+    e = int(input("Верхнее число ряда "))
+    r = 1
+    s = 0
+    print(r)
+    for i in range(e):
+        s += r
+        r /= -2
+        print(r)
+    print ("Сумма ряда", s)
+    
 else:
     print("Неправильный номер задания")
