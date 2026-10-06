@@ -13,7 +13,7 @@ elif q == 2:
 
 elif q == 3:
     n = int(input())
-    total = 0
+    total = 1
     for i in range(n):
         print('Рассматриваем число', i)
         total += i
@@ -39,6 +39,6 @@ elif q == 5:
         r /= -2
         print(r)
     print ("Сумма ряда", s)
-    
+
 else:
     print("Неправильный номер задания")
