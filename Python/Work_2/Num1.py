@@ -1,12 +1,25 @@
-#Вводим данные
-import itertools
-for i in itertools.count():
-    i = input("Введите натуральные числа: ")
+print("Введите числа. Чтобы закончить, введите 0")
 
-    if i == "":
+numbers = []   # здесь будет наш массив
+
+# цикл ввода значений
+while True:
+    a = int(input())
+    if a == 0:
         break
-    else:
-        i = []
+    numbers.append(a)   # добавляем в массив
 
-print (i)
+# теперь можно обработать массив через for
+positive_sum = 0
+negative_sum = 0
+
+raid = []
+
+for num in numbers:
+    if num in range(1, 3):
+        raid.append(num)
+    else:
+        continue
+
+print("Принадлежат массиву: ", raid)
 
