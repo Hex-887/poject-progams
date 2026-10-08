@@ -4,7 +4,7 @@ numbers = []   # здесь будет наш массив
 
 # цикл ввода значений
 while True:
-    a = int(input())
+    a = float(input())
     if a == 0:
         break
     numbers.append(a)   # добавляем в массив
